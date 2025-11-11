@@ -1,4 +1,4 @@
-package com.test.automation_core.config;
+package com.test.config;
 
 import lombok.Getter;
 import org.springframework.beans.factory.annotation.Value;
@@ -10,6 +10,6 @@ public class DemoqaConfig {
     @Value("${app.url}")
     private String appUrl;
 
-    @Value("{browser}:FIREFOX")
+    @Value("${browser}")
     private String browser;
 }

@@ -1,7 +1,7 @@
-package com.test.automation_core;
+package com.demoqa.test;
 
-import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.testng.annotations.Test;
 
 @SpringBootTest
 class AutomationCoreApplicationTests {
