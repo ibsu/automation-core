@@ -1,7 +1,7 @@
-package com.demoqa.test.pages;
+package com.demoqa.test.driverrelated;
 
 import org.openqa.selenium.WebDriver;
 
-public interface BrowserDriver {
+public interface DriverManager {
     WebDriver createDriver();
 }

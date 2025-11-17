@@ -1,25 +1,38 @@
 package com.demoqa.test.pages;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
-import org.openqa.selenium.support.PageFactory;
 
 public class TextBoxPage extends PageManager {
-    @FindBy(how = How.ID, using = "userName")
+    @FindBy(id = "userName")
     private WebElement fullNameInput;
 
-    @FindBy(how = How.ID, using = "userEmail")
+    @FindBy(id = "userEmail")
     private WebElement emailInput;
 
-    @FindBy(how = How.ID, using = "currentAddress")
+    @FindBy(id = "currentAddress")
     private WebElement addressTextArea;
 
-    @FindBy(how = How.ID, using = "submit")
+    @FindBy(id = "submit")
     private WebElement submitBtn;
 
-    public TextBoxPage(WebDriver driver) {
-        PageFactory.initElements(driver, this);
+    public TextBoxPage addFullName(String fullName){
+        fullNameInput.sendKeys(fullName);
+        return this;
+    }
+
+    public TextBoxPage addEmail(String email){
+        emailInput.sendKeys(email);
+        return this;
+    }
+
+    public TextBoxPage addCurrentAddress(String currentAddress){
+        addressTextArea.sendKeys(currentAddress);
+        return this;
+    }
+
+    public TextBoxPage clickOnSubmitBtn(){
+        submitBtn.click();
+        return this;
     }
 }

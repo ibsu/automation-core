@@ -1,6 +1,6 @@
 package com.demoqa.test.pages;
 
-import com.demoqa.test.BaseUiTest;
+import com.demoqa.test.driverrelated.BaseUiTest;
 import jakarta.annotation.PostConstruct;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
