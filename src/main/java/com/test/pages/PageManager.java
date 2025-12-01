@@ -1,6 +1,5 @@
-package com.demoqa.test.pages;
+package com.test.pages;
 
-import com.demoqa.test.driverrelated.BaseUiTest;
 import jakarta.annotation.PostConstruct;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
@@ -8,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
 
 @ComponentScan("com.test.pageobjects")
-public abstract class PageManager extends BaseUiTest {
+public abstract class PageManager {
 
     @Autowired
     protected RegisterPage registerPage;

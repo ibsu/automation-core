@@ -1,6 +1,6 @@
 package com.demoqa.test.ui.elements;
 
-import com.demoqa.test.pages.PageManager;
+import com.test.pages.PageManager;
 import org.testng.annotations.Test;
 
 public class TextBoxTest extends PageManager {

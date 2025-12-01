@@ -1,6 +1,8 @@
-package com.demoqa.test.driverrelated;
+package com.demoqa.test.ui;
 
 import com.test.config.DemoqaConfig;
+import com.test.driverrelated.BrowserType;
+import com.test.driverrelated.DriverFactory;
 import org.openqa.selenium.WebDriver;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
@@ -13,13 +15,13 @@ public class BaseUiTest extends AbstractTestNGSpringContextTests {
     protected DemoqaConfig demoqaConfig;
 
     @BeforeMethod
-    public void setUp(){
+    public void setUp() {
         WebDriver driver = DriverFactory.getWebDriver(BrowserType.FIREFOX);
         driver.get("");
     }
 
     @AfterMethod
-    public void tearDown(){
+    public void tearDown() {
         DriverFactory.quitDriver();
     }
 }

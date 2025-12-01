@@ -1,4 +1,4 @@
-package com.demoqa.test.driverrelated;
+package com.test.driverrelated;
 
 public enum BrowserType {
     CHROME,

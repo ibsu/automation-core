@@ -1,4 +1,4 @@
-package com.demoqa.test.driverrelated;
+package com.test.driverrelated;
 
 import org.openqa.selenium.WebDriver;
 
@@ -31,9 +31,9 @@ public class DriverFactory {
         }
     }
 
-    public static void quitDriver(){
+    public static void quitDriver() {
         WebDriver driver = threadLocalDriver.get();
-        if(driver != null){
+        if (driver != null) {
             driver.quit();
             threadLocalDriver.remove();
         }
